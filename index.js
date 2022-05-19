@@ -22,8 +22,8 @@ app.get('/generator_diete.html', function(req, res){
     /// public e numele directorului din care luam index.html
 });
 
-app.get('/Site.html', (req, res) =>{
-    res.sendFile(path.join(__dirname, 'public', 'Site.html'));
+app.get('/index.html', (req, res) =>{
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
 app.get('/macros.html', (req, res) =>{
