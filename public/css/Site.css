@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+#despre_proiect{
+    font-size: 30px;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+
+
+  body {
+    /* font-family: 'Lucida Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #a1c3ff;
+  }
+
+.header{
+    /* background-color: #9933cc; */
+    /* background-color: #0151cc; */
+    background-color: #254de4;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.75em;
+    text-indent: 100px;
+}
+
+h1, h2{
+    margin-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+ol{
+    list-style-type: hebrew;
+}
+
+a{
+    text-decoration: none;
+}
+
+#bolder{
+    font-weight: 550;
+    color:black;
+}
+
+.subtitlu{
+    display: block;
+    font-weight:700;
+    font-size:1.15em;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+#subTabele{
+    /* margin-left:16.66%;
+    margin-bottom: 10px; */
+    padding: 15px 0;
+    color:#ffffff;
+    text-align: center;
+    font-size: 00.7em;
+    background-color: rgb(30, 30, 125);
+}
+
+
+.topnav {
+    /* background-color: #33b5e5; */
+    overflow: hidden;
+    background-color: #3474e6;
+  }
+/* 
+inainte de a implementa meniul dropdown era .topnav .container
+acum nu mai functioneaza media query-urile
+dar cred ca stiu de ce also paddingul era 0 30px
+*/
+
+
+
+
+
+.topnav .container{
+    display:flex;
+    justify-content: space-between;
+    padding:0 30px;
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 00.95em;
+  }
+
+.topnav a.active{
+    /* background-color: #0099cc; */
+    /* background-color: darkblue; */
+    background-color: #0151cc;
+    color:white;
+}
+
+.topnav a:hover:not(.active){
+    /* background-color: #0099cc; */
+    /* background-color: darkblue; */
+    background-color: #0151cc;
+    opacity: 0.8;
+    transition-property: background-color, opacity;
+    transition-duration: 300ms;
+    color: white;
+    
+}
+
+.menu ul {
+    margin-left: 10px;
+  }
+  
+.menu li {
+    /* background-color: #33b5e5; */
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+    padding: 8px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    background-color: #3474e6;
+    color: #ffffff;
+  }
+  
+.menu li:hover {
+    /* background-color: darkblue; */
+    /* background-color: #0099cc; */
+    background-color: #0151cc;
+    opacity: 0.8;
+    transition-property: background-color, opacity;
+    transition-duration: 300ms;
+  }
+  
+.menu{
+    position: fixed;
+    overflow-x: hidden;
+    padding: 8px 0;
+    width:auto;
+  }
+
+.menu a{
+    font-size: 0.95 rem;
+} 
+
+
+.dropdown{
+    justify-self: center;
+    align-self: center;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: #0151cc;
+    opacity: 0.8;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a1c3ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropdown-content:hover .dropbtn{
+    background-color: #0151cc;
+    opacity: 0.8;
+}   
+
+.content_mijloc{
+    /* background-color: darkblue; */
+    /* float:left; */
+    margin-left:16.66%;
+    width: 58.33%;
+    color:black;
+    padding:10px 10px 20px;
+    text-align: justify;
+}
+
+.content_mijloc .subtitlu{
+    text-indent: 150px;
+}
+
+.content_mijloc p {
+    text-indent:30px;
+}
+
+
+/* #surse_carbohidrati{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#surse_lipide{
+    margin-bottom: 20px;
+} */
+.cbc{
+    margin:20px 10px;
+}
+
+/* header{
+    height: 20vh;
+} */
+
+/* .bbl .container{
+    display: flex;
+    flex-direction: column;
+    height:80vh;
+    flex-wrap: wrap;
+}
+.bbl .container .content_bbl{
+    background-color: aquamarine;
+    flex:1;
+} */
+
+.footer_bbl{
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 00.7em;
+    text-align: center;
+    background-color: rgb(30, 30, 125);
+}
+
+.content_bbl .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height:75vh;
+    flex-wrap: wrap;
+    
+}
+.content_bbl .container .item{
+    background-color: #3474e6;
+    color:white;
+    flex:1;
+    font-size: 0.85em;
+    height:minmax(40vh, auto);
+    margin:15px;
+    padding:10px 0px;
+    border-radius: 10px;
+}
+
+.content_bbl .container .item h2{
+    text-align: center;
+}
+
+.content_bbl .container .item ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content_bbl .container .item ul li{
+    color:white;
+    text-align: center;
+    margin: 5px;
+}
+
+
+div p {
+    font-size: 0.95em;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+tr > th {
+    font-size: 1.05 em;
+}
+
+
+td{
+    text-align: center;
+    font-size: 0.95 em;
+}
+
+table{
+    margin-left:10%;
+    margin-right:10%;
+    width: 80%;
+    border-collapse: collapse;
+    
+}
+
+.aside {
+    /* display: block; */
+    /* background-color: #33b5e5; */
+    /* float:right; */
+    /* margin-left:calc(16.66%+58.33%); */
+    background-color: #3474e6;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 25%;
+    border-radius: 10px;
+  }
+
+.aside li {
+    /* list-style-type: none; */
+      padding-left: 5px;
+      padding-bottom: 5px;
+      text-align: justify;
+      
+  }
+
+/* .aside::after{
+    content:"";
+    clear:both;
+    display:block;
+}   */
+
+.content_mijloc p::first-letter{
+    font-size: large;
+    font-weight: bold;
+}
+
+.bucata1 .container{
+    display: flex;
+    /* background-color: aqua; */
+    flex-shrink: 1;
+    margin: 10px 0;
+}
+.bucata1 .container .aside{
+    justify-self: center;
+    align-self: center;
+}
+
+.bucata2 .container{
+    display: flex;
+    /* background-color: pink; */
+    margin: 10px 0;
+}
+
+.bucata2 .container .aside{
+    justify-self: center;
+    align-self: center;
+}
+
+.bucata3 .container{
+    display: flex;
+    /* background-color: rgb(92, 145, 145); */
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bucata3 .container .aside{
+    justify-self: center;
+    align-self: center;
+}
+
+
+.bucata4 .container{
+    display: flex;
+    margin: 10px 0;
+    /* background-color: rgb(104, 255, 109); */
+}
+
+.bucata4 .container .aside{
+    justify-self: center;
+    align-self: center;
+}
+
+.footer_site{
+    padding: 15px 0;
+    color: #ffffff;
+    font-size: 00.7em;
+    text-align: center;
+    background-color: rgb(30, 30, 125);
+}
+#swap img{
+    width: 250px;
+}
+#swap li{
+    text-align: center;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+      }
+    40%{
+        transform:rotate(100deg) ;
+        background-color: rgb(49, 242, 181);
+        opacity: 0.5;
+        color:black;
+    }  
+
+
+      100% {
+        transform: rotate(360deg);
+        background-color: rgb(30, 30, 125);
+        opacity: 0.8;
+      }
+}
+
+.item{
+    animation: rotation 3s ease-in-out;
+}
+
+/* .bucata1 .container aside{
+    height: 200px;
+} */
+
+ /* For mobile phones: */
+/* @media only screen and (max-width: 600px){
+    html{
+        font-size: 2 vw;
+    }
+} */
+
+
+
+@media only screen and (max-width: 800px){
+    .topnav .container{
+        flex-direction: column;        
+    }
+
+    .dropdown{
+        padding: 16px 0;
+        justify-self: unset;
+        align-self: unset;
+    }
+    .dropbtn{
+        display: flex;
+        
+    }
+    
+    .menu{
+        padding-left:0 ;
+        position: static;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    .menu ul li{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* .menu::after{
+        content:"";
+        clear:both;
+        display:block;
+    }   */
+
+    /*
+    Trebuie sa aranjez pagina de cheatsheet pentru ecrane mici
+    gata l-am aranjat
+    */
+
+
+
+    .content_mijloc .subtitlu{
+        text-indent: 0px;
+    }
+
+    .header{
+        text-indent: 0;
+        text-align: center;
+    }
+
+    .content_bbl .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .content_bbl .container .item{
+        font-size: 0.7em;
+        height: auto;
+    }
+    
+
+    .content_mijloc{
+        margin-left: 0;
+        width:60%;
+    }
+    .aside{
+        width:40%;
+    }
+    table{
+        margin-left: 0;
+        width: 100%;
+    }
+}
